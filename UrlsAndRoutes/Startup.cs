@@ -28,6 +28,9 @@ namespace UrlsAndRoutes
                 routes.MapRoute(
                     name: "default", 
                     template: "{controller=Home}/{action=Index}");
+                routes.MapRoute(
+                    name: "",
+                    template: "Public/{controller=Home}/{action=Index}");
             });
         }
     }
