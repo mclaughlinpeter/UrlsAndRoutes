@@ -9,6 +9,7 @@ namespace UrlsAndRoutes.Controllers
 {
     public class CustomerController : Controller
     {
+        [Route("[controller]/MyAction")]
         public ViewResult Index() => View("Result", new Result
         {
             Controller = nameof(CustomerController),
